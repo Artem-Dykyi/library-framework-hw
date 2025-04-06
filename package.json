@@ -2,10 +2,11 @@
   "name": "library-framework-hw",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://artem-dykyi.github.io/library-framework-hw/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html --public-url .",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
@@ -16,6 +17,9 @@
     "@pnotify/desktop": "^5.2.0",
     "chart.js": "^4.4.8",
     "chartjs-plugin-trendline": "^2.1.6",
+    "gh": "^2.8.9",
+    "gh-pages": "^6.3.0",
+    "pages": "^0.0.16",
     "parcel": "^2.14.0",
     "pnotify": "^5.2.0"
   }
